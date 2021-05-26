@@ -1,0 +1,1004 @@
+2015-05-23 19:40:07,293 ERROR [core.Main] 
+com.sun.mail.util.MailConnectException: Couldn't connect to host, port: smtp.nextel.com.br, 25; timeout -1;
+  nested exception is:
+	java.net.UnknownHostException: smtp.nextel.com.br
+	at com.sun.mail.smtp.SMTPTransport.openServer(SMTPTransport.java:2053)
+	at com.sun.mail.smtp.SMTPTransport.protocolConnect(SMTPTransport.java:697)
+	at javax.mail.Service.connect(Service.java:364)
+	at javax.mail.Service.connect(Service.java:245)
+	at javax.mail.Service.connect(Service.java:194)
+	at javax.mail.Transport.send0(Transport.java:253)
+	at javax.mail.Transport.send(Transport.java:124)
+	at core.Email.enviarHTML(Email.java:65)
+	at core.Main.main(Main.java:44)
+Caused by: java.net.UnknownHostException: smtp.nextel.com.br
+	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:178)
+	at java.net.PlainSocketImpl.connect(PlainSocketImpl.java:172)
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392)
+	at java.net.Socket.connect(Socket.java:579)
+	at java.net.Socket.connect(Socket.java:528)
+	at com.sun.mail.util.SocketFetcher.createSocket(SocketFetcher.java:312)
+	at com.sun.mail.util.SocketFetcher.getSocket(SocketFetcher.java:236)
+	at com.sun.mail.smtp.SMTPTransport.openServer(SMTPTransport.java:2019)
+	... 8 more
+2015-05-23 21:50:52,703 ERROR [core.Main] 
+java.lang.NullPointerException
+	at org.apache.commons.mail.ImageHtmlEmail.replacePattern(ImageHtmlEmail.java:151)
+	at org.apache.commons.mail.ImageHtmlEmail.buildMimeMessage(ImageHtmlEmail.java:105)
+	at org.apache.commons.mail.Email.send(Email.java:1447)
+	at core.Email.enviarHTML(Email.java:55)
+	at core.Main.main(Main.java:44)
+2015-05-23 21:51:22,229 ERROR [core.Main] 
+java.lang.NullPointerException
+	at org.apache.commons.mail.ImageHtmlEmail.replacePattern(ImageHtmlEmail.java:151)
+	at org.apache.commons.mail.ImageHtmlEmail.buildMimeMessage(ImageHtmlEmail.java:105)
+	at org.apache.commons.mail.Email.send(Email.java:1447)
+	at core.Email.enviarHTML(Email.java:55)
+	at core.Main.main(Main.java:44)
+2015-05-23 21:53:23,646 ERROR [core.Main] 
+java.lang.NullPointerException
+	at org.apache.commons.mail.ImageHtmlEmail.replacePattern(ImageHtmlEmail.java:151)
+	at org.apache.commons.mail.ImageHtmlEmail.buildMimeMessage(ImageHtmlEmail.java:105)
+	at org.apache.commons.mail.Email.send(Email.java:1447)
+	at core.Email.enviarHTML(Email.java:55)
+	at core.Main.main(Main.java:44)
+2015-05-23 21:54:05,257 ERROR [core.Main] 
+java.lang.NullPointerException
+	at org.apache.commons.mail.ImageHtmlEmail.replacePattern(ImageHtmlEmail.java:151)
+	at org.apache.commons.mail.ImageHtmlEmail.buildMimeMessage(ImageHtmlEmail.java:105)
+	at org.apache.commons.mail.Email.send(Email.java:1447)
+	at core.Email.enviarHTML(Email.java:55)
+	at core.Main.main(Main.java:44)
+2015-05-23 21:55:37,874 ERROR [core.Main] 
+java.lang.NullPointerException
+	at org.apache.commons.mail.ImageHtmlEmail.replacePattern(ImageHtmlEmail.java:151)
+	at org.apache.commons.mail.ImageHtmlEmail.buildMimeMessage(ImageHtmlEmail.java:105)
+	at org.apache.commons.mail.Email.send(Email.java:1447)
+	at core.Email.enviarHTML(Email.java:61)
+	at core.Main.main(Main.java:44)
+2015-05-23 21:55:54,642 ERROR [core.Main] 
+java.lang.NullPointerException
+	at org.apache.commons.mail.ImageHtmlEmail.replacePattern(ImageHtmlEmail.java:151)
+	at org.apache.commons.mail.ImageHtmlEmail.buildMimeMessage(ImageHtmlEmail.java:105)
+	at org.apache.commons.mail.Email.send(Email.java:1447)
+	at core.Email.enviarHTML(Email.java:59)
+	at core.Main.main(Main.java:44)
+2015-05-23 21:56:07,920 ERROR [core.Main] 
+java.lang.NullPointerException
+	at org.apache.commons.mail.ImageHtmlEmail.replacePattern(ImageHtmlEmail.java:151)
+	at org.apache.commons.mail.ImageHtmlEmail.buildMimeMessage(ImageHtmlEmail.java:105)
+	at org.apache.commons.mail.Email.send(Email.java:1447)
+	at core.Email.enviarHTML(Email.java:59)
+	at core.Main.main(Main.java:44)
+2015-05-23 21:56:15,009 ERROR [core.Main] 
+java.lang.NullPointerException
+	at org.apache.commons.mail.ImageHtmlEmail.replacePattern(ImageHtmlEmail.java:151)
+	at org.apache.commons.mail.ImageHtmlEmail.buildMimeMessage(ImageHtmlEmail.java:105)
+	at org.apache.commons.mail.Email.send(Email.java:1447)
+	at core.Email.enviarHTML(Email.java:59)
+	at core.Main.main(Main.java:44)
+2015-05-23 21:59:03,660 ERROR [core.Main] 
+org.apache.commons.mail.EmailException: Invalid URL
+	at org.apache.commons.mail.HtmlEmail.embed(HtmlEmail.java:219)
+	at core.Email.enviarHTML(Email.java:51)
+	at core.Main.main(Main.java:44)
+Caused by: java.net.MalformedURLException: no protocol: emailTemplate//img//nextel.png
+	at java.net.URL.<init>(URL.java:585)
+	at java.net.URL.<init>(URL.java:482)
+	at java.net.URL.<init>(URL.java:431)
+	at org.apache.commons.mail.HtmlEmail.embed(HtmlEmail.java:215)
+	... 2 more
+2015-05-24 21:16:04,790 ERROR [core.Main] 
+java.sql.SQLException: [Microsoft][SQLServer 2000 Driver for JDBC]Software caused connection abort: recv failed
+	at com.microsoft.jdbc.base.BaseExceptions.createException(Unknown Source)
+	at com.microsoft.jdbc.base.BaseExceptions.getException(Unknown Source)
+	at com.microsoft.jdbc.base.BaseExceptions.getException(Unknown Source)
+	at com.microsoft.jdbc.sqlserver.tds.TDSRequest.processReply(Unknown Source)
+	at com.microsoft.jdbc.sqlserver.SQLServerImplStatement.getNextResultType(Unknown Source)
+	at com.microsoft.jdbc.base.BaseStatement.commonTransitionToState(Unknown Source)
+	at com.microsoft.jdbc.base.BaseStatement.postImplExecute(Unknown Source)
+	at com.microsoft.jdbc.base.BaseStatement.commonExecute(Unknown Source)
+	at com.microsoft.jdbc.base.BaseStatement.executeQueryInternal(Unknown Source)
+	at com.microsoft.jdbc.base.BaseStatement.executeQuery(Unknown Source)
+	at conexoes.Core.getOutagesNotificacoes(Core.java:922)
+	at core.Notificacoes.teste(Notificacoes.java:49)
+	at core.Main.main(Main.java:43)
+2015-05-26 08:26:15,847 ERROR [core.ColetaPortabilidade] 
+java.sql.SQLException: ORA-01017: invalid username/password; logon denied
+
+	at oracle.jdbc.driver.T4CTTIoer.processError(T4CTTIoer.java:440)
+	at oracle.jdbc.driver.T4CTTIoer.processError(T4CTTIoer.java:389)
+	at oracle.jdbc.driver.T4CTTIoer.processError(T4CTTIoer.java:382)
+	at oracle.jdbc.driver.T4CTTIfun.processError(T4CTTIfun.java:573)
+	at oracle.jdbc.driver.T4CTTIoauthenticate.processError(T4CTTIoauthenticate.java:431)
+	at oracle.jdbc.driver.T4CTTIfun.receive(T4CTTIfun.java:445)
+	at oracle.jdbc.driver.T4CTTIfun.doRPC(T4CTTIfun.java:191)
+	at oracle.jdbc.driver.T4CTTIoauthenticate.doOAUTH(T4CTTIoauthenticate.java:366)
+	at oracle.jdbc.driver.T4CTTIoauthenticate.doOAUTH(T4CTTIoauthenticate.java:752)
+	at oracle.jdbc.driver.T4CConnection.logon(T4CConnection.java:366)
+	at oracle.jdbc.driver.PhysicalConnection.<init>(PhysicalConnection.java:536)
+	at oracle.jdbc.driver.T4CConnection.<init>(T4CConnection.java:228)
+	at oracle.jdbc.driver.T4CDriverExtension.getConnection(T4CDriverExtension.java:32)
+	at oracle.jdbc.driver.OracleDriver.connect(OracleDriver.java:521)
+	at java.sql.DriverManager.getConnection(DriverManager.java:571)
+	at java.sql.DriverManager.getConnection(DriverManager.java:215)
+	at conexoes.Portabilidade.<init>(Portabilidade.java:22)
+	at core.ColetaPortabilidade.run(ColetaPortabilidade.java:28)
+	at java.util.TimerThread.mainLoop(Timer.java:555)
+	at java.util.TimerThread.run(Timer.java:505)
+2015-05-26 08:26:15,920 ERROR [core.ColetaPortabilidade] 
+java.lang.NullPointerException
+	at core.ColetaPortabilidade.run(ColetaPortabilidade.java:46)
+	at java.util.TimerThread.mainLoop(Timer.java:555)
+	at java.util.TimerThread.run(Timer.java:505)
+2015-05-26 16:48:49,050 ERROR [core.ColetaPortabilidade] 
+java.sql.SQLException: ORA-01017: invalid username/password; logon denied
+
+	at oracle.jdbc.driver.T4CTTIoer.processError(T4CTTIoer.java:440)
+	at oracle.jdbc.driver.T4CTTIoer.processError(T4CTTIoer.java:389)
+	at oracle.jdbc.driver.T4CTTIoer.processError(T4CTTIoer.java:382)
+	at oracle.jdbc.driver.T4CTTIfun.processError(T4CTTIfun.java:573)
+	at oracle.jdbc.driver.T4CTTIoauthenticate.processError(T4CTTIoauthenticate.java:431)
+	at oracle.jdbc.driver.T4CTTIfun.receive(T4CTTIfun.java:445)
+	at oracle.jdbc.driver.T4CTTIfun.doRPC(T4CTTIfun.java:191)
+	at oracle.jdbc.driver.T4CTTIoauthenticate.doOAUTH(T4CTTIoauthenticate.java:366)
+	at oracle.jdbc.driver.T4CTTIoauthenticate.doOAUTH(T4CTTIoauthenticate.java:752)
+	at oracle.jdbc.driver.T4CConnection.logon(T4CConnection.java:366)
+	at oracle.jdbc.driver.PhysicalConnection.<init>(PhysicalConnection.java:536)
+	at oracle.jdbc.driver.T4CConnection.<init>(T4CConnection.java:228)
+	at oracle.jdbc.driver.T4CDriverExtension.getConnection(T4CDriverExtension.java:32)
+	at oracle.jdbc.driver.OracleDriver.connect(OracleDriver.java:521)
+	at java.sql.DriverManager.getConnection(DriverManager.java:571)
+	at java.sql.DriverManager.getConnection(DriverManager.java:215)
+	at conexoes.Portabilidade.<init>(Portabilidade.java:22)
+	at core.ColetaPortabilidade.run(ColetaPortabilidade.java:28)
+	at java.util.TimerThread.mainLoop(Timer.java:555)
+	at java.util.TimerThread.run(Timer.java:505)
+2015-05-26 16:48:49,079 ERROR [core.ColetaPortabilidade] 
+java.lang.NullPointerException
+	at core.ColetaPortabilidade.run(ColetaPortabilidade.java:46)
+	at java.util.TimerThread.mainLoop(Timer.java:555)
+	at java.util.TimerThread.run(Timer.java:505)
+2015-05-27 08:14:02,419 ERROR [core.ColetaPortabilidade] 
+java.sql.SQLException: ORA-01017: invalid username/password; logon denied
+
+	at oracle.jdbc.driver.T4CTTIoer.processError(T4CTTIoer.java:440)
+	at oracle.jdbc.driver.T4CTTIoer.processError(T4CTTIoer.java:389)
+	at oracle.jdbc.driver.T4CTTIoer.processError(T4CTTIoer.java:382)
+	at oracle.jdbc.driver.T4CTTIfun.processError(T4CTTIfun.java:573)
+	at oracle.jdbc.driver.T4CTTIoauthenticate.processError(T4CTTIoauthenticate.java:431)
+	at oracle.jdbc.driver.T4CTTIfun.receive(T4CTTIfun.java:445)
+	at oracle.jdbc.driver.T4CTTIfun.doRPC(T4CTTIfun.java:191)
+	at oracle.jdbc.driver.T4CTTIoauthenticate.doOAUTH(T4CTTIoauthenticate.java:366)
+	at oracle.jdbc.driver.T4CTTIoauthenticate.doOAUTH(T4CTTIoauthenticate.java:752)
+	at oracle.jdbc.driver.T4CConnection.logon(T4CConnection.java:366)
+	at oracle.jdbc.driver.PhysicalConnection.<init>(PhysicalConnection.java:536)
+	at oracle.jdbc.driver.T4CConnection.<init>(T4CConnection.java:228)
+	at oracle.jdbc.driver.T4CDriverExtension.getConnection(T4CDriverExtension.java:32)
+	at oracle.jdbc.driver.OracleDriver.connect(OracleDriver.java:521)
+	at java.sql.DriverManager.getConnection(Unknown Source)
+	at java.sql.DriverManager.getConnection(Unknown Source)
+	at conexoes.Portabilidade.<init>(Portabilidade.java:22)
+	at core.ColetaPortabilidade.run(ColetaPortabilidade.java:28)
+	at java.util.TimerThread.mainLoop(Unknown Source)
+	at java.util.TimerThread.run(Unknown Source)
+2015-05-27 08:14:02,435 ERROR [core.ColetaPortabilidade] 
+java.lang.NullPointerException
+	at core.ColetaPortabilidade.run(ColetaPortabilidade.java:46)
+	at java.util.TimerThread.mainLoop(Unknown Source)
+	at java.util.TimerThread.run(Unknown Source)
+2015-05-27 08:24:11,086 ERROR [core.ColetaPortabilidade] 
+java.sql.SQLException: ORA-01017: invalid username/password; logon denied
+
+	at oracle.jdbc.driver.T4CTTIoer.processError(T4CTTIoer.java:440)
+	at oracle.jdbc.driver.T4CTTIoer.processError(T4CTTIoer.java:389)
+	at oracle.jdbc.driver.T4CTTIoer.processError(T4CTTIoer.java:382)
+	at oracle.jdbc.driver.T4CTTIfun.processError(T4CTTIfun.java:573)
+	at oracle.jdbc.driver.T4CTTIoauthenticate.processError(T4CTTIoauthenticate.java:431)
+	at oracle.jdbc.driver.T4CTTIfun.receive(T4CTTIfun.java:445)
+	at oracle.jdbc.driver.T4CTTIfun.doRPC(T4CTTIfun.java:191)
+	at oracle.jdbc.driver.T4CTTIoauthenticate.doOAUTH(T4CTTIoauthenticate.java:366)
+	at oracle.jdbc.driver.T4CTTIoauthenticate.doOAUTH(T4CTTIoauthenticate.java:752)
+	at oracle.jdbc.driver.T4CConnection.logon(T4CConnection.java:366)
+	at oracle.jdbc.driver.PhysicalConnection.<init>(PhysicalConnection.java:536)
+	at oracle.jdbc.driver.T4CConnection.<init>(T4CConnection.java:228)
+	at oracle.jdbc.driver.T4CDriverExtension.getConnection(T4CDriverExtension.java:32)
+	at oracle.jdbc.driver.OracleDriver.connect(OracleDriver.java:521)
+	at java.sql.DriverManager.getConnection(Unknown Source)
+	at java.sql.DriverManager.getConnection(Unknown Source)
+	at conexoes.Portabilidade.<init>(Portabilidade.java:22)
+	at core.ColetaPortabilidade.run(ColetaPortabilidade.java:28)
+	at java.util.TimerThread.mainLoop(Unknown Source)
+	at java.util.TimerThread.run(Unknown Source)
+2015-05-27 08:24:11,094 ERROR [core.ColetaPortabilidade] 
+java.lang.NullPointerException
+	at core.ColetaPortabilidade.run(ColetaPortabilidade.java:46)
+	at java.util.TimerThread.mainLoop(Unknown Source)
+	at java.util.TimerThread.run(Unknown Source)
+2015-05-27 08:24:11,462 ERROR [core.Notificacoes] 
+org.apache.commons.mail.EmailException: Sending the email to the following server failed : smtp.nextel.com.br:25
+	at org.apache.commons.mail.Email.sendMimeMessage(Email.java:1421)
+	at org.apache.commons.mail.Email.send(Email.java:1448)
+	at core.Email.enviarHTML(Email.java:64)
+	at core.Notificacoes.verificarNotificaoesOutage(Notificacoes.java:58)
+	at core.Notificacoes.run(Notificacoes.java:30)
+	at java.util.TimerThread.mainLoop(Unknown Source)
+	at java.util.TimerThread.run(Unknown Source)
+Caused by: javax.mail.NoSuchProviderException: smtp
+	at javax.mail.Session.getService(Session.java:807)
+	at javax.mail.Session.getTransport(Session.java:737)
+	at javax.mail.Session.getTransport(Session.java:678)
+	at javax.mail.Session.getTransport(Session.java:658)
+	at javax.mail.Session.getTransport(Session.java:715)
+	at javax.mail.Transport.send0(Transport.java:248)
+	at javax.mail.Transport.send(Transport.java:124)
+	at org.apache.commons.mail.Email.sendMimeMessage(Email.java:1411)
+	... 6 more
+2015-05-27 08:25:01,775 ERROR [core.ColetaPortabilidade] 
+java.sql.SQLException: ORA-28000: the account is locked
+
+	at oracle.jdbc.driver.T4CTTIoer.processError(T4CTTIoer.java:440)
+	at oracle.jdbc.driver.T4CTTIoer.processError(T4CTTIoer.java:389)
+	at oracle.jdbc.driver.T4CTTIoer.processError(T4CTTIoer.java:382)
+	at oracle.jdbc.driver.T4CTTIfun.processError(T4CTTIfun.java:573)
+	at oracle.jdbc.driver.T4CTTIoauthenticate.processError(T4CTTIoauthenticate.java:431)
+	at oracle.jdbc.driver.T4CTTIfun.receive(T4CTTIfun.java:445)
+	at oracle.jdbc.driver.T4CTTIfun.doRPC(T4CTTIfun.java:191)
+	at oracle.jdbc.driver.T4CTTIoauthenticate.doOAUTH(T4CTTIoauthenticate.java:366)
+	at oracle.jdbc.driver.T4CTTIoauthenticate.doOAUTH(T4CTTIoauthenticate.java:752)
+	at oracle.jdbc.driver.T4CConnection.logon(T4CConnection.java:366)
+	at oracle.jdbc.driver.PhysicalConnection.<init>(PhysicalConnection.java:536)
+	at oracle.jdbc.driver.T4CConnection.<init>(T4CConnection.java:228)
+	at oracle.jdbc.driver.T4CDriverExtension.getConnection(T4CDriverExtension.java:32)
+	at oracle.jdbc.driver.OracleDriver.connect(OracleDriver.java:521)
+	at java.sql.DriverManager.getConnection(Unknown Source)
+	at java.sql.DriverManager.getConnection(Unknown Source)
+	at conexoes.Portabilidade.<init>(Portabilidade.java:22)
+	at core.ColetaPortabilidade.run(ColetaPortabilidade.java:28)
+	at java.util.TimerThread.mainLoop(Unknown Source)
+	at java.util.TimerThread.run(Unknown Source)
+2015-05-27 08:25:01,778 ERROR [core.ColetaPortabilidade] 
+java.lang.NullPointerException
+	at core.ColetaPortabilidade.run(ColetaPortabilidade.java:46)
+	at java.util.TimerThread.mainLoop(Unknown Source)
+	at java.util.TimerThread.run(Unknown Source)
+2015-05-29 07:49:28,497 ERROR [core.Main] 
+java.lang.NullPointerException
+	at javax.mail.internet.InternetAddress.parse(InternetAddress.java:679)
+	at javax.mail.internet.InternetAddress.parse(InternetAddress.java:638)
+	at javax.mail.internet.InternetAddress.<init>(InternetAddress.java:111)
+	at org.apache.commons.mail.Email.createInternetAddress(Email.java:1895)
+	at org.apache.commons.mail.Email.setFrom(Email.java:749)
+	at org.apache.commons.mail.Email.setFrom(Email.java:732)
+	at org.apache.commons.mail.Email.setFrom(Email.java:712)
+	at core.Email.enviarHTML(Email.java:51)
+	at core.Main.main(Main.java:36)
+2015-05-29 07:50:54,055 ERROR [core.Main] 
+java.lang.NullPointerException
+	at javax.mail.internet.InternetAddress.parse(InternetAddress.java:679)
+	at javax.mail.internet.InternetAddress.parse(InternetAddress.java:638)
+	at javax.mail.internet.InternetAddress.<init>(InternetAddress.java:111)
+	at org.apache.commons.mail.Email.createInternetAddress(Email.java:1895)
+	at org.apache.commons.mail.Email.setFrom(Email.java:749)
+	at org.apache.commons.mail.Email.setFrom(Email.java:732)
+	at org.apache.commons.mail.Email.setFrom(Email.java:712)
+	at core.Email.enviarHTML(Email.java:51)
+	at core.Main.main(Main.java:36)
+2015-06-02 10:54:21,723 ERROR [core.Main] 
+java.lang.NullPointerException
+	at core.ColetaPortabilidade.enviarNotificacao(ColetaPortabilidade.java:137)
+	at core.Main.main(Main.java:39)
+2015-06-19 09:39:57,929 ERROR [core.ColetaAlarmesVandalismo] 
+java.sql.SQLException: [Microsoft][SQLServer 2000 Driver for JDBC][SQLServer]Invalid column name 'ID_ABERTURA'.
+	at com.microsoft.jdbc.base.BaseExceptions.createException(Unknown Source)
+	at com.microsoft.jdbc.base.BaseExceptions.getException(Unknown Source)
+	at com.microsoft.jdbc.sqlserver.tds.TDSRequest.processErrorToken(Unknown Source)
+	at com.microsoft.jdbc.sqlserver.tds.TDSRequest.processReplyToken(Unknown Source)
+	at com.microsoft.jdbc.sqlserver.tds.TDSExecuteRequest.processReplyToken(Unknown Source)
+	at com.microsoft.jdbc.sqlserver.tds.TDSRequest.processReply(Unknown Source)
+	at com.microsoft.jdbc.sqlserver.SQLServerImplStatement.getNextResultType(Unknown Source)
+	at com.microsoft.jdbc.base.BaseStatement.commonTransitionToState(Unknown Source)
+	at com.microsoft.jdbc.base.BaseStatement.postImplExecute(Unknown Source)
+	at com.microsoft.jdbc.base.BaseStatement.commonExecute(Unknown Source)
+	at com.microsoft.jdbc.base.BaseStatement.executeQueryInternal(Unknown Source)
+	at com.microsoft.jdbc.base.BaseStatement.executeQuery(Unknown Source)
+	at conexoes.Core.verificarVisita(Core.java:1992)
+	at core.ColetaAlarmesVandalismo.run(ColetaAlarmesVandalismo.java:40)
+	at core.Main.main(Main.java:37)
+2015-06-19 10:16:48,245 ERROR [core.ColetaAlarmesVandalismo] 
+org.apache.commons.mail.EmailException: Sending the email to the following server failed : smtp.nextel.com.br:25
+	at org.apache.commons.mail.Email.sendMimeMessage(Email.java:1421)
+	at org.apache.commons.mail.Email.send(Email.java:1448)
+	at core.Email.enviarHTML(Email.java:63)
+	at core.ColetaAlarmesVandalismo.run(ColetaAlarmesVandalismo.java:88)
+	at java.util.TimerThread.mainLoop(Unknown Source)
+	at java.util.TimerThread.run(Unknown Source)
+Caused by: javax.mail.MessagingException: Could not connect to SMTP host: smtp.nextel.com.br, port: 25, response: 421
+	at com.sun.mail.smtp.SMTPTransport.openServer(SMTPTransport.java:2042)
+	at com.sun.mail.smtp.SMTPTransport.protocolConnect(SMTPTransport.java:697)
+	at javax.mail.Service.connect(Service.java:364)
+	at javax.mail.Service.connect(Service.java:245)
+	at javax.mail.Service.connect(Service.java:194)
+	at javax.mail.Transport.send0(Transport.java:253)
+	at javax.mail.Transport.send(Transport.java:124)
+	at org.apache.commons.mail.Email.sendMimeMessage(Email.java:1411)
+	... 5 more
+2015-06-19 10:17:58,718 ERROR [core.ColetaAlarmesVandalismo] 
+org.apache.commons.mail.EmailException: Sending the email to the following server failed : smtp.nextel.com.br:25
+	at org.apache.commons.mail.Email.sendMimeMessage(Email.java:1421)
+	at org.apache.commons.mail.Email.send(Email.java:1448)
+	at core.Email.enviarHTML(Email.java:63)
+	at core.ColetaAlarmesVandalismo.run(ColetaAlarmesVandalismo.java:88)
+	at java.util.TimerThread.mainLoop(Unknown Source)
+	at java.util.TimerThread.run(Unknown Source)
+Caused by: javax.mail.MessagingException: Could not connect to SMTP host: smtp.nextel.com.br, port: 25, response: 421
+	at com.sun.mail.smtp.SMTPTransport.openServer(SMTPTransport.java:2042)
+	at com.sun.mail.smtp.SMTPTransport.protocolConnect(SMTPTransport.java:697)
+	at javax.mail.Service.connect(Service.java:364)
+	at javax.mail.Service.connect(Service.java:245)
+	at javax.mail.Service.connect(Service.java:194)
+	at javax.mail.Transport.send0(Transport.java:253)
+	at javax.mail.Transport.send(Transport.java:124)
+	at org.apache.commons.mail.Email.sendMimeMessage(Email.java:1411)
+	... 5 more
+2015-06-19 10:18:10,756 ERROR [core.ColetaAlarmesVandalismo] 
+org.apache.commons.mail.EmailException: Sending the email to the following server failed : smtp.nextel.com.br:25
+	at org.apache.commons.mail.Email.sendMimeMessage(Email.java:1421)
+	at org.apache.commons.mail.Email.send(Email.java:1448)
+	at core.Email.enviarHTML(Email.java:63)
+	at core.ColetaAlarmesVandalismo.run(ColetaAlarmesVandalismo.java:88)
+	at java.util.TimerThread.mainLoop(Unknown Source)
+	at java.util.TimerThread.run(Unknown Source)
+Caused by: javax.mail.MessagingException: Could not connect to SMTP host: smtp.nextel.com.br, port: 25, response: 421
+	at com.sun.mail.smtp.SMTPTransport.openServer(SMTPTransport.java:2042)
+	at com.sun.mail.smtp.SMTPTransport.protocolConnect(SMTPTransport.java:697)
+	at javax.mail.Service.connect(Service.java:364)
+	at javax.mail.Service.connect(Service.java:245)
+	at javax.mail.Service.connect(Service.java:194)
+	at javax.mail.Transport.send0(Transport.java:253)
+	at javax.mail.Transport.send(Transport.java:124)
+	at org.apache.commons.mail.Email.sendMimeMessage(Email.java:1411)
+	... 5 more
+2015-06-19 10:18:59,143 ERROR [core.ColetaAlarmesVandalismo] 
+org.apache.commons.mail.EmailException: Sending the email to the following server failed : smtp.nextel.com.br:25
+	at org.apache.commons.mail.Email.sendMimeMessage(Email.java:1421)
+	at org.apache.commons.mail.Email.send(Email.java:1448)
+	at core.Email.enviarHTML(Email.java:63)
+	at core.ColetaAlarmesVandalismo.run(ColetaAlarmesVandalismo.java:88)
+	at java.util.TimerThread.mainLoop(Unknown Source)
+	at java.util.TimerThread.run(Unknown Source)
+Caused by: javax.mail.MessagingException: Could not connect to SMTP host: smtp.nextel.com.br, port: 25, response: 421
+	at com.sun.mail.smtp.SMTPTransport.openServer(SMTPTransport.java:2042)
+	at com.sun.mail.smtp.SMTPTransport.protocolConnect(SMTPTransport.java:697)
+	at javax.mail.Service.connect(Service.java:364)
+	at javax.mail.Service.connect(Service.java:245)
+	at javax.mail.Service.connect(Service.java:194)
+	at javax.mail.Transport.send0(Transport.java:253)
+	at javax.mail.Transport.send(Transport.java:124)
+	at org.apache.commons.mail.Email.sendMimeMessage(Email.java:1411)
+	... 5 more
+2015-06-19 10:19:10,946 ERROR [core.ColetaAlarmesVandalismo] 
+org.apache.commons.mail.EmailException: Sending the email to the following server failed : smtp.nextel.com.br:25
+	at org.apache.commons.mail.Email.sendMimeMessage(Email.java:1421)
+	at org.apache.commons.mail.Email.send(Email.java:1448)
+	at core.Email.enviarHTML(Email.java:63)
+	at core.ColetaAlarmesVandalismo.run(ColetaAlarmesVandalismo.java:88)
+	at java.util.TimerThread.mainLoop(Unknown Source)
+	at java.util.TimerThread.run(Unknown Source)
+Caused by: javax.mail.MessagingException: Could not connect to SMTP host: smtp.nextel.com.br, port: 25, response: 421
+	at com.sun.mail.smtp.SMTPTransport.openServer(SMTPTransport.java:2042)
+	at com.sun.mail.smtp.SMTPTransport.protocolConnect(SMTPTransport.java:697)
+	at javax.mail.Service.connect(Service.java:364)
+	at javax.mail.Service.connect(Service.java:245)
+	at javax.mail.Service.connect(Service.java:194)
+	at javax.mail.Transport.send0(Transport.java:253)
+	at javax.mail.Transport.send(Transport.java:124)
+	at org.apache.commons.mail.Email.sendMimeMessage(Email.java:1411)
+	... 5 more
+2015-06-19 10:19:27,331 ERROR [core.ColetaAlarmesVandalismo] 
+org.apache.commons.mail.EmailException: Sending the email to the following server failed : smtp.nextel.com.br:25
+	at org.apache.commons.mail.Email.sendMimeMessage(Email.java:1421)
+	at org.apache.commons.mail.Email.send(Email.java:1448)
+	at core.Email.enviarHTML(Email.java:63)
+	at core.ColetaAlarmesVandalismo.run(ColetaAlarmesVandalismo.java:88)
+	at java.util.TimerThread.mainLoop(Unknown Source)
+	at java.util.TimerThread.run(Unknown Source)
+Caused by: javax.mail.MessagingException: Could not connect to SMTP host: smtp.nextel.com.br, port: 25, response: 421
+	at com.sun.mail.smtp.SMTPTransport.openServer(SMTPTransport.java:2042)
+	at com.sun.mail.smtp.SMTPTransport.protocolConnect(SMTPTransport.java:697)
+	at javax.mail.Service.connect(Service.java:364)
+	at javax.mail.Service.connect(Service.java:245)
+	at javax.mail.Service.connect(Service.java:194)
+	at javax.mail.Transport.send0(Transport.java:253)
+	at javax.mail.Transport.send(Transport.java:124)
+	at org.apache.commons.mail.Email.sendMimeMessage(Email.java:1411)
+	... 5 more
+2015-06-19 10:19:40,227 ERROR [core.ColetaAlarmesVandalismo] 
+org.apache.commons.mail.EmailException: Sending the email to the following server failed : smtp.nextel.com.br:25
+	at org.apache.commons.mail.Email.sendMimeMessage(Email.java:1421)
+	at org.apache.commons.mail.Email.send(Email.java:1448)
+	at core.Email.enviarHTML(Email.java:63)
+	at core.ColetaAlarmesVandalismo.run(ColetaAlarmesVandalismo.java:88)
+	at java.util.TimerThread.mainLoop(Unknown Source)
+	at java.util.TimerThread.run(Unknown Source)
+Caused by: javax.mail.MessagingException: Could not connect to SMTP host: smtp.nextel.com.br, port: 25, response: 421
+	at com.sun.mail.smtp.SMTPTransport.openServer(SMTPTransport.java:2042)
+	at com.sun.mail.smtp.SMTPTransport.protocolConnect(SMTPTransport.java:697)
+	at javax.mail.Service.connect(Service.java:364)
+	at javax.mail.Service.connect(Service.java:245)
+	at javax.mail.Service.connect(Service.java:194)
+	at javax.mail.Transport.send0(Transport.java:253)
+	at javax.mail.Transport.send(Transport.java:124)
+	at org.apache.commons.mail.Email.sendMimeMessage(Email.java:1411)
+	... 5 more
+2015-06-19 10:19:53,760 ERROR [core.ColetaAlarmesVandalismo] 
+org.apache.commons.mail.EmailException: Sending the email to the following server failed : smtp.nextel.com.br:25
+	at org.apache.commons.mail.Email.sendMimeMessage(Email.java:1421)
+	at org.apache.commons.mail.Email.send(Email.java:1448)
+	at core.Email.enviarHTML(Email.java:63)
+	at core.ColetaAlarmesVandalismo.run(ColetaAlarmesVandalismo.java:88)
+	at java.util.TimerThread.mainLoop(Unknown Source)
+	at java.util.TimerThread.run(Unknown Source)
+Caused by: javax.mail.MessagingException: Could not connect to SMTP host: smtp.nextel.com.br, port: 25, response: 421
+	at com.sun.mail.smtp.SMTPTransport.openServer(SMTPTransport.java:2042)
+	at com.sun.mail.smtp.SMTPTransport.protocolConnect(SMTPTransport.java:697)
+	at javax.mail.Service.connect(Service.java:364)
+	at javax.mail.Service.connect(Service.java:245)
+	at javax.mail.Service.connect(Service.java:194)
+	at javax.mail.Transport.send0(Transport.java:253)
+	at javax.mail.Transport.send(Transport.java:124)
+	at org.apache.commons.mail.Email.sendMimeMessage(Email.java:1411)
+	... 5 more
+2015-06-19 10:20:07,350 ERROR [core.ColetaAlarmesVandalismo] 
+org.apache.commons.mail.EmailException: Sending the email to the following server failed : smtp.nextel.com.br:25
+	at org.apache.commons.mail.Email.sendMimeMessage(Email.java:1421)
+	at org.apache.commons.mail.Email.send(Email.java:1448)
+	at core.Email.enviarHTML(Email.java:63)
+	at core.ColetaAlarmesVandalismo.run(ColetaAlarmesVandalismo.java:88)
+	at java.util.TimerThread.mainLoop(Unknown Source)
+	at java.util.TimerThread.run(Unknown Source)
+Caused by: javax.mail.MessagingException: Could not connect to SMTP host: smtp.nextel.com.br, port: 25, response: 421
+	at com.sun.mail.smtp.SMTPTransport.openServer(SMTPTransport.java:2042)
+	at com.sun.mail.smtp.SMTPTransport.protocolConnect(SMTPTransport.java:697)
+	at javax.mail.Service.connect(Service.java:364)
+	at javax.mail.Service.connect(Service.java:245)
+	at javax.mail.Service.connect(Service.java:194)
+	at javax.mail.Transport.send0(Transport.java:253)
+	at javax.mail.Transport.send(Transport.java:124)
+	at org.apache.commons.mail.Email.sendMimeMessage(Email.java:1411)
+	... 5 more
+2015-06-19 10:20:26,554 ERROR [core.ColetaAlarmesVandalismo] 
+org.apache.commons.mail.EmailException: Sending the email to the following server failed : smtp.nextel.com.br:25
+	at org.apache.commons.mail.Email.sendMimeMessage(Email.java:1421)
+	at org.apache.commons.mail.Email.send(Email.java:1448)
+	at core.Email.enviarHTML(Email.java:63)
+	at core.ColetaAlarmesVandalismo.run(ColetaAlarmesVandalismo.java:88)
+	at java.util.TimerThread.mainLoop(Unknown Source)
+	at java.util.TimerThread.run(Unknown Source)
+Caused by: javax.mail.MessagingException: Could not connect to SMTP host: smtp.nextel.com.br, port: 25, response: 421
+	at com.sun.mail.smtp.SMTPTransport.openServer(SMTPTransport.java:2042)
+	at com.sun.mail.smtp.SMTPTransport.protocolConnect(SMTPTransport.java:697)
+	at javax.mail.Service.connect(Service.java:364)
+	at javax.mail.Service.connect(Service.java:245)
+	at javax.mail.Service.connect(Service.java:194)
+	at javax.mail.Transport.send0(Transport.java:253)
+	at javax.mail.Transport.send(Transport.java:124)
+	at org.apache.commons.mail.Email.sendMimeMessage(Email.java:1411)
+	... 5 more
+2015-06-19 10:20:42,613 ERROR [core.ColetaAlarmesVandalismo] 
+org.apache.commons.mail.EmailException: Sending the email to the following server failed : smtp.nextel.com.br:25
+	at org.apache.commons.mail.Email.sendMimeMessage(Email.java:1421)
+	at org.apache.commons.mail.Email.send(Email.java:1448)
+	at core.Email.enviarHTML(Email.java:63)
+	at core.ColetaAlarmesVandalismo.run(ColetaAlarmesVandalismo.java:88)
+	at java.util.TimerThread.mainLoop(Unknown Source)
+	at java.util.TimerThread.run(Unknown Source)
+Caused by: javax.mail.MessagingException: Could not connect to SMTP host: smtp.nextel.com.br, port: 25, response: 421
+	at com.sun.mail.smtp.SMTPTransport.openServer(SMTPTransport.java:2042)
+	at com.sun.mail.smtp.SMTPTransport.protocolConnect(SMTPTransport.java:697)
+	at javax.mail.Service.connect(Service.java:364)
+	at javax.mail.Service.connect(Service.java:245)
+	at javax.mail.Service.connect(Service.java:194)
+	at javax.mail.Transport.send0(Transport.java:253)
+	at javax.mail.Transport.send(Transport.java:124)
+	at org.apache.commons.mail.Email.sendMimeMessage(Email.java:1411)
+	... 5 more
+2015-06-19 10:20:54,600 ERROR [core.ColetaAlarmesVandalismo] 
+org.apache.commons.mail.EmailException: Sending the email to the following server failed : smtp.nextel.com.br:25
+	at org.apache.commons.mail.Email.sendMimeMessage(Email.java:1421)
+	at org.apache.commons.mail.Email.send(Email.java:1448)
+	at core.Email.enviarHTML(Email.java:63)
+	at core.ColetaAlarmesVandalismo.run(ColetaAlarmesVandalismo.java:88)
+	at java.util.TimerThread.mainLoop(Unknown Source)
+	at java.util.TimerThread.run(Unknown Source)
+Caused by: javax.mail.MessagingException: Could not connect to SMTP host: smtp.nextel.com.br, port: 25, response: 421
+	at com.sun.mail.smtp.SMTPTransport.openServer(SMTPTransport.java:2042)
+	at com.sun.mail.smtp.SMTPTransport.protocolConnect(SMTPTransport.java:697)
+	at javax.mail.Service.connect(Service.java:364)
+	at javax.mail.Service.connect(Service.java:245)
+	at javax.mail.Service.connect(Service.java:194)
+	at javax.mail.Transport.send0(Transport.java:253)
+	at javax.mail.Transport.send(Transport.java:124)
+	at org.apache.commons.mail.Email.sendMimeMessage(Email.java:1411)
+	... 5 more
+2015-06-19 10:21:12,523 ERROR [core.ColetaAlarmesVandalismo] 
+org.apache.commons.mail.EmailException: Sending the email to the following server failed : smtp.nextel.com.br:25
+	at org.apache.commons.mail.Email.sendMimeMessage(Email.java:1421)
+	at org.apache.commons.mail.Email.send(Email.java:1448)
+	at core.Email.enviarHTML(Email.java:63)
+	at core.ColetaAlarmesVandalismo.run(ColetaAlarmesVandalismo.java:88)
+	at java.util.TimerThread.mainLoop(Unknown Source)
+	at java.util.TimerThread.run(Unknown Source)
+Caused by: javax.mail.MessagingException: Could not connect to SMTP host: smtp.nextel.com.br, port: 25, response: 421
+	at com.sun.mail.smtp.SMTPTransport.openServer(SMTPTransport.java:2042)
+	at com.sun.mail.smtp.SMTPTransport.protocolConnect(SMTPTransport.java:697)
+	at javax.mail.Service.connect(Service.java:364)
+	at javax.mail.Service.connect(Service.java:245)
+	at javax.mail.Service.connect(Service.java:194)
+	at javax.mail.Transport.send0(Transport.java:253)
+	at javax.mail.Transport.send(Transport.java:124)
+	at org.apache.commons.mail.Email.sendMimeMessage(Email.java:1411)
+	... 5 more
+2015-06-19 10:21:26,682 ERROR [core.ColetaAlarmesVandalismo] 
+org.apache.commons.mail.EmailException: Sending the email to the following server failed : smtp.nextel.com.br:25
+	at org.apache.commons.mail.Email.sendMimeMessage(Email.java:1421)
+	at org.apache.commons.mail.Email.send(Email.java:1448)
+	at core.Email.enviarHTML(Email.java:63)
+	at core.ColetaAlarmesVandalismo.run(ColetaAlarmesVandalismo.java:88)
+	at java.util.TimerThread.mainLoop(Unknown Source)
+	at java.util.TimerThread.run(Unknown Source)
+Caused by: javax.mail.MessagingException: Could not connect to SMTP host: smtp.nextel.com.br, port: 25, response: 421
+	at com.sun.mail.smtp.SMTPTransport.openServer(SMTPTransport.java:2042)
+	at com.sun.mail.smtp.SMTPTransport.protocolConnect(SMTPTransport.java:697)
+	at javax.mail.Service.connect(Service.java:364)
+	at javax.mail.Service.connect(Service.java:245)
+	at javax.mail.Service.connect(Service.java:194)
+	at javax.mail.Transport.send0(Transport.java:253)
+	at javax.mail.Transport.send(Transport.java:124)
+	at org.apache.commons.mail.Email.sendMimeMessage(Email.java:1411)
+	... 5 more
+2015-06-19 10:21:42,933 ERROR [core.ColetaAlarmesVandalismo] 
+org.apache.commons.mail.EmailException: Sending the email to the following server failed : smtp.nextel.com.br:25
+	at org.apache.commons.mail.Email.sendMimeMessage(Email.java:1421)
+	at org.apache.commons.mail.Email.send(Email.java:1448)
+	at core.Email.enviarHTML(Email.java:63)
+	at core.ColetaAlarmesVandalismo.run(ColetaAlarmesVandalismo.java:88)
+	at java.util.TimerThread.mainLoop(Unknown Source)
+	at java.util.TimerThread.run(Unknown Source)
+Caused by: javax.mail.MessagingException: Could not connect to SMTP host: smtp.nextel.com.br, port: 25, response: 421
+	at com.sun.mail.smtp.SMTPTransport.openServer(SMTPTransport.java:2042)
+	at com.sun.mail.smtp.SMTPTransport.protocolConnect(SMTPTransport.java:697)
+	at javax.mail.Service.connect(Service.java:364)
+	at javax.mail.Service.connect(Service.java:245)
+	at javax.mail.Service.connect(Service.java:194)
+	at javax.mail.Transport.send0(Transport.java:253)
+	at javax.mail.Transport.send(Transport.java:124)
+	at org.apache.commons.mail.Email.sendMimeMessage(Email.java:1411)
+	... 5 more
+2015-06-19 10:21:59,040 ERROR [core.ColetaAlarmesVandalismo] 
+org.apache.commons.mail.EmailException: Sending the email to the following server failed : smtp.nextel.com.br:25
+	at org.apache.commons.mail.Email.sendMimeMessage(Email.java:1421)
+	at org.apache.commons.mail.Email.send(Email.java:1448)
+	at core.Email.enviarHTML(Email.java:63)
+	at core.ColetaAlarmesVandalismo.run(ColetaAlarmesVandalismo.java:88)
+	at java.util.TimerThread.mainLoop(Unknown Source)
+	at java.util.TimerThread.run(Unknown Source)
+Caused by: javax.mail.MessagingException: Could not connect to SMTP host: smtp.nextel.com.br, port: 25, response: 421
+	at com.sun.mail.smtp.SMTPTransport.openServer(SMTPTransport.java:2042)
+	at com.sun.mail.smtp.SMTPTransport.protocolConnect(SMTPTransport.java:697)
+	at javax.mail.Service.connect(Service.java:364)
+	at javax.mail.Service.connect(Service.java:245)
+	at javax.mail.Service.connect(Service.java:194)
+	at javax.mail.Transport.send0(Transport.java:253)
+	at javax.mail.Transport.send(Transport.java:124)
+	at org.apache.commons.mail.Email.sendMimeMessage(Email.java:1411)
+	... 5 more
+2015-06-19 10:22:11,994 ERROR [core.ColetaAlarmesVandalismo] 
+org.apache.commons.mail.EmailException: Sending the email to the following server failed : smtp.nextel.com.br:25
+	at org.apache.commons.mail.Email.sendMimeMessage(Email.java:1421)
+	at org.apache.commons.mail.Email.send(Email.java:1448)
+	at core.Email.enviarHTML(Email.java:63)
+	at core.ColetaAlarmesVandalismo.run(ColetaAlarmesVandalismo.java:88)
+	at java.util.TimerThread.mainLoop(Unknown Source)
+	at java.util.TimerThread.run(Unknown Source)
+Caused by: javax.mail.MessagingException: Could not connect to SMTP host: smtp.nextel.com.br, port: 25, response: 421
+	at com.sun.mail.smtp.SMTPTransport.openServer(SMTPTransport.java:2042)
+	at com.sun.mail.smtp.SMTPTransport.protocolConnect(SMTPTransport.java:697)
+	at javax.mail.Service.connect(Service.java:364)
+	at javax.mail.Service.connect(Service.java:245)
+	at javax.mail.Service.connect(Service.java:194)
+	at javax.mail.Transport.send0(Transport.java:253)
+	at javax.mail.Transport.send(Transport.java:124)
+	at org.apache.commons.mail.Email.sendMimeMessage(Email.java:1411)
+	... 5 more
+2015-06-19 10:22:25,897 ERROR [core.ColetaAlarmesVandalismo] 
+org.apache.commons.mail.EmailException: Sending the email to the following server failed : smtp.nextel.com.br:25
+	at org.apache.commons.mail.Email.sendMimeMessage(Email.java:1421)
+	at org.apache.commons.mail.Email.send(Email.java:1448)
+	at core.Email.enviarHTML(Email.java:63)
+	at core.ColetaAlarmesVandalismo.run(ColetaAlarmesVandalismo.java:88)
+	at java.util.TimerThread.mainLoop(Unknown Source)
+	at java.util.TimerThread.run(Unknown Source)
+Caused by: javax.mail.MessagingException: Could not connect to SMTP host: smtp.nextel.com.br, port: 25, response: 421
+	at com.sun.mail.smtp.SMTPTransport.openServer(SMTPTransport.java:2042)
+	at com.sun.mail.smtp.SMTPTransport.protocolConnect(SMTPTransport.java:697)
+	at javax.mail.Service.connect(Service.java:364)
+	at javax.mail.Service.connect(Service.java:245)
+	at javax.mail.Service.connect(Service.java:194)
+	at javax.mail.Transport.send0(Transport.java:253)
+	at javax.mail.Transport.send(Transport.java:124)
+	at org.apache.commons.mail.Email.sendMimeMessage(Email.java:1411)
+	... 5 more
+2015-06-19 10:22:44,454 ERROR [core.ColetaAlarmesVandalismo] 
+org.apache.commons.mail.EmailException: Sending the email to the following server failed : smtp.nextel.com.br:25
+	at org.apache.commons.mail.Email.sendMimeMessage(Email.java:1421)
+	at org.apache.commons.mail.Email.send(Email.java:1448)
+	at core.Email.enviarHTML(Email.java:63)
+	at core.ColetaAlarmesVandalismo.run(ColetaAlarmesVandalismo.java:88)
+	at java.util.TimerThread.mainLoop(Unknown Source)
+	at java.util.TimerThread.run(Unknown Source)
+Caused by: javax.mail.MessagingException: Could not connect to SMTP host: smtp.nextel.com.br, port: 25, response: 421
+	at com.sun.mail.smtp.SMTPTransport.openServer(SMTPTransport.java:2042)
+	at com.sun.mail.smtp.SMTPTransport.protocolConnect(SMTPTransport.java:697)
+	at javax.mail.Service.connect(Service.java:364)
+	at javax.mail.Service.connect(Service.java:245)
+	at javax.mail.Service.connect(Service.java:194)
+	at javax.mail.Transport.send0(Transport.java:253)
+	at javax.mail.Transport.send(Transport.java:124)
+	at org.apache.commons.mail.Email.sendMimeMessage(Email.java:1411)
+	... 5 more
+2015-06-19 10:23:03,933 ERROR [core.ColetaAlarmesVandalismo] 
+org.apache.commons.mail.EmailException: Sending the email to the following server failed : smtp.nextel.com.br:25
+	at org.apache.commons.mail.Email.sendMimeMessage(Email.java:1421)
+	at org.apache.commons.mail.Email.send(Email.java:1448)
+	at core.Email.enviarHTML(Email.java:63)
+	at core.ColetaAlarmesVandalismo.run(ColetaAlarmesVandalismo.java:88)
+	at java.util.TimerThread.mainLoop(Unknown Source)
+	at java.util.TimerThread.run(Unknown Source)
+Caused by: javax.mail.MessagingException: Could not connect to SMTP host: smtp.nextel.com.br, port: 25, response: 421
+	at com.sun.mail.smtp.SMTPTransport.openServer(SMTPTransport.java:2042)
+	at com.sun.mail.smtp.SMTPTransport.protocolConnect(SMTPTransport.java:697)
+	at javax.mail.Service.connect(Service.java:364)
+	at javax.mail.Service.connect(Service.java:245)
+	at javax.mail.Service.connect(Service.java:194)
+	at javax.mail.Transport.send0(Transport.java:253)
+	at javax.mail.Transport.send(Transport.java:124)
+	at org.apache.commons.mail.Email.sendMimeMessage(Email.java:1411)
+	... 5 more
+2015-06-19 10:23:23,092 ERROR [core.ColetaAlarmesVandalismo] 
+org.apache.commons.mail.EmailException: Sending the email to the following server failed : smtp.nextel.com.br:25
+	at org.apache.commons.mail.Email.sendMimeMessage(Email.java:1421)
+	at org.apache.commons.mail.Email.send(Email.java:1448)
+	at core.Email.enviarHTML(Email.java:63)
+	at core.ColetaAlarmesVandalismo.run(ColetaAlarmesVandalismo.java:88)
+	at java.util.TimerThread.mainLoop(Unknown Source)
+	at java.util.TimerThread.run(Unknown Source)
+Caused by: javax.mail.MessagingException: Could not connect to SMTP host: smtp.nextel.com.br, port: 25, response: 421
+	at com.sun.mail.smtp.SMTPTransport.openServer(SMTPTransport.java:2042)
+	at com.sun.mail.smtp.SMTPTransport.protocolConnect(SMTPTransport.java:697)
+	at javax.mail.Service.connect(Service.java:364)
+	at javax.mail.Service.connect(Service.java:245)
+	at javax.mail.Service.connect(Service.java:194)
+	at javax.mail.Transport.send0(Transport.java:253)
+	at javax.mail.Transport.send(Transport.java:124)
+	at org.apache.commons.mail.Email.sendMimeMessage(Email.java:1411)
+	... 5 more
+2015-06-19 10:23:40,609 ERROR [core.ColetaAlarmesVandalismo] 
+org.apache.commons.mail.EmailException: Sending the email to the following server failed : smtp.nextel.com.br:25
+	at org.apache.commons.mail.Email.sendMimeMessage(Email.java:1421)
+	at org.apache.commons.mail.Email.send(Email.java:1448)
+	at core.Email.enviarHTML(Email.java:63)
+	at core.ColetaAlarmesVandalismo.run(ColetaAlarmesVandalismo.java:88)
+	at java.util.TimerThread.mainLoop(Unknown Source)
+	at java.util.TimerThread.run(Unknown Source)
+Caused by: javax.mail.MessagingException: Could not connect to SMTP host: smtp.nextel.com.br, port: 25, response: 421
+	at com.sun.mail.smtp.SMTPTransport.openServer(SMTPTransport.java:2042)
+	at com.sun.mail.smtp.SMTPTransport.protocolConnect(SMTPTransport.java:697)
+	at javax.mail.Service.connect(Service.java:364)
+	at javax.mail.Service.connect(Service.java:245)
+	at javax.mail.Service.connect(Service.java:194)
+	at javax.mail.Transport.send0(Transport.java:253)
+	at javax.mail.Transport.send(Transport.java:124)
+	at org.apache.commons.mail.Email.sendMimeMessage(Email.java:1411)
+	... 5 more
+2015-06-19 10:24:22,061 ERROR [core.ColetaAlarmesVandalismo] 
+org.apache.commons.mail.EmailException: Sending the email to the following server failed : smtp.nextel.com.br:25
+	at org.apache.commons.mail.Email.sendMimeMessage(Email.java:1421)
+	at org.apache.commons.mail.Email.send(Email.java:1448)
+	at core.Email.enviarHTML(Email.java:63)
+	at core.ColetaAlarmesVandalismo.run(ColetaAlarmesVandalismo.java:88)
+	at java.util.TimerThread.mainLoop(Unknown Source)
+	at java.util.TimerThread.run(Unknown Source)
+Caused by: javax.mail.MessagingException: Could not connect to SMTP host: smtp.nextel.com.br, port: 25, response: 421
+	at com.sun.mail.smtp.SMTPTransport.openServer(SMTPTransport.java:2042)
+	at com.sun.mail.smtp.SMTPTransport.protocolConnect(SMTPTransport.java:697)
+	at javax.mail.Service.connect(Service.java:364)
+	at javax.mail.Service.connect(Service.java:245)
+	at javax.mail.Service.connect(Service.java:194)
+	at javax.mail.Transport.send0(Transport.java:253)
+	at javax.mail.Transport.send(Transport.java:124)
+	at org.apache.commons.mail.Email.sendMimeMessage(Email.java:1411)
+	... 5 more
+2015-06-19 10:24:47,873 ERROR [core.ColetaAlarmesVandalismo] 
+org.apache.commons.mail.EmailException: Sending the email to the following server failed : smtp.nextel.com.br:25
+	at org.apache.commons.mail.Email.sendMimeMessage(Email.java:1421)
+	at org.apache.commons.mail.Email.send(Email.java:1448)
+	at core.Email.enviarHTML(Email.java:63)
+	at core.ColetaAlarmesVandalismo.run(ColetaAlarmesVandalismo.java:88)
+	at java.util.TimerThread.mainLoop(Unknown Source)
+	at java.util.TimerThread.run(Unknown Source)
+Caused by: javax.mail.MessagingException: Could not connect to SMTP host: smtp.nextel.com.br, port: 25, response: 421
+	at com.sun.mail.smtp.SMTPTransport.openServer(SMTPTransport.java:2042)
+	at com.sun.mail.smtp.SMTPTransport.protocolConnect(SMTPTransport.java:697)
+	at javax.mail.Service.connect(Service.java:364)
+	at javax.mail.Service.connect(Service.java:245)
+	at javax.mail.Service.connect(Service.java:194)
+	at javax.mail.Transport.send0(Transport.java:253)
+	at javax.mail.Transport.send(Transport.java:124)
+	at org.apache.commons.mail.Email.sendMimeMessage(Email.java:1411)
+	... 5 more
+2015-06-19 10:25:00,821 ERROR [core.ColetaAlarmesVandalismo] 
+org.apache.commons.mail.EmailException: Sending the email to the following server failed : smtp.nextel.com.br:25
+	at org.apache.commons.mail.Email.sendMimeMessage(Email.java:1421)
+	at org.apache.commons.mail.Email.send(Email.java:1448)
+	at core.Email.enviarHTML(Email.java:63)
+	at core.ColetaAlarmesVandalismo.run(ColetaAlarmesVandalismo.java:88)
+	at java.util.TimerThread.mainLoop(Unknown Source)
+	at java.util.TimerThread.run(Unknown Source)
+Caused by: javax.mail.MessagingException: Could not connect to SMTP host: smtp.nextel.com.br, port: 25, response: 421
+	at com.sun.mail.smtp.SMTPTransport.openServer(SMTPTransport.java:2042)
+	at com.sun.mail.smtp.SMTPTransport.protocolConnect(SMTPTransport.java:697)
+	at javax.mail.Service.connect(Service.java:364)
+	at javax.mail.Service.connect(Service.java:245)
+	at javax.mail.Service.connect(Service.java:194)
+	at javax.mail.Transport.send0(Transport.java:253)
+	at javax.mail.Transport.send(Transport.java:124)
+	at org.apache.commons.mail.Email.sendMimeMessage(Email.java:1411)
+	... 5 more
+2015-06-19 10:25:13,321 ERROR [core.ColetaAlarmesVandalismo] 
+org.apache.commons.mail.EmailException: Sending the email to the following server failed : smtp.nextel.com.br:25
+	at org.apache.commons.mail.Email.sendMimeMessage(Email.java:1421)
+	at org.apache.commons.mail.Email.send(Email.java:1448)
+	at core.Email.enviarHTML(Email.java:63)
+	at core.ColetaAlarmesVandalismo.run(ColetaAlarmesVandalismo.java:88)
+	at java.util.TimerThread.mainLoop(Unknown Source)
+	at java.util.TimerThread.run(Unknown Source)
+Caused by: javax.mail.MessagingException: Could not connect to SMTP host: smtp.nextel.com.br, port: 25, response: 421
+	at com.sun.mail.smtp.SMTPTransport.openServer(SMTPTransport.java:2042)
+	at com.sun.mail.smtp.SMTPTransport.protocolConnect(SMTPTransport.java:697)
+	at javax.mail.Service.connect(Service.java:364)
+	at javax.mail.Service.connect(Service.java:245)
+	at javax.mail.Service.connect(Service.java:194)
+	at javax.mail.Transport.send0(Transport.java:253)
+	at javax.mail.Transport.send(Transport.java:124)
+	at org.apache.commons.mail.Email.sendMimeMessage(Email.java:1411)
+	... 5 more
+2015-06-23 12:15:56,578 ERROR [core.ColetaPortabilidade] 
+java.sql.SQLRecoverableException: Erro de ES: Unknown host specified 
+	at oracle.jdbc.driver.T4CConnection.logon(T4CConnection.java:419)
+	at oracle.jdbc.driver.PhysicalConnection.<init>(PhysicalConnection.java:536)
+	at oracle.jdbc.driver.T4CConnection.<init>(T4CConnection.java:228)
+	at oracle.jdbc.driver.T4CDriverExtension.getConnection(T4CDriverExtension.java:32)
+	at oracle.jdbc.driver.OracleDriver.connect(OracleDriver.java:521)
+	at java.sql.DriverManager.getConnection(Unknown Source)
+	at java.sql.DriverManager.getConnection(Unknown Source)
+	at conexoes.Portabilidade.<init>(Portabilidade.java:22)
+	at core.ColetaPortabilidade.run(ColetaPortabilidade.java:28)
+	at java.util.TimerThread.mainLoop(Unknown Source)
+	at java.util.TimerThread.run(Unknown Source)
+Caused by: oracle.net.ns.NetException: Unknown host specified 
+	at oracle.net.resolver.HostnameNamingAdapter.resolve(HostnameNamingAdapter.java:191)
+	at oracle.net.resolver.NameResolver.resolveName(NameResolver.java:133)
+	at oracle.net.resolver.AddrResolution.resolveAndExecute(AddrResolution.java:404)
+	at oracle.net.ns.NSProtocol.establishConnection(NSProtocol.java:678)
+	at oracle.net.ns.NSProtocol.connect(NSProtocol.java:238)
+	at oracle.jdbc.driver.T4CConnection.connect(T4CConnection.java:1054)
+	at oracle.jdbc.driver.T4CConnection.logon(T4CConnection.java:308)
+	... 10 more
+2015-06-23 12:15:57,078 ERROR [core.ColetaPortabilidade] 
+java.lang.NullPointerException
+	at core.ColetaPortabilidade.run(ColetaPortabilidade.java:46)
+	at java.util.TimerThread.mainLoop(Unknown Source)
+	at java.util.TimerThread.run(Unknown Source)
+2015-06-23 12:17:16,826 ERROR [core.OperacoesWFM] 
+java.sql.SQLException: [Microsoft][SQLServer 2000 Driver for JDBC][SQLServer]Incorrect syntax near ','.
+	at com.microsoft.jdbc.base.BaseExceptions.createException(Unknown Source)
+	at com.microsoft.jdbc.base.BaseExceptions.getException(Unknown Source)
+	at com.microsoft.jdbc.sqlserver.tds.TDSRequest.processErrorToken(Unknown Source)
+	at com.microsoft.jdbc.sqlserver.tds.TDSRequest.processReplyToken(Unknown Source)
+	at com.microsoft.jdbc.sqlserver.tds.TDSExecuteRequest.processReplyToken(Unknown Source)
+	at com.microsoft.jdbc.sqlserver.tds.TDSRequest.processReply(Unknown Source)
+	at com.microsoft.jdbc.sqlserver.SQLServerImplStatement.getNextResultType(Unknown Source)
+	at com.microsoft.jdbc.base.BaseStatement.commonTransitionToState(Unknown Source)
+	at com.microsoft.jdbc.base.BaseStatement.postImplExecute(Unknown Source)
+	at com.microsoft.jdbc.base.BaseStatement.commonExecute(Unknown Source)
+	at com.microsoft.jdbc.base.BaseStatement.executeUpdateInternal(Unknown Source)
+	at com.microsoft.jdbc.base.BaseStatement.executeUpdate(Unknown Source)
+	at conexoes.Core.registrarEntradaEagle(Core.java:3411)
+	at core.OperacoesWFM.entradaSites(OperacoesWFM.java:164)
+	at core.OperacoesWFM.run(OperacoesWFM.java:29)
+	at java.util.TimerThread.mainLoop(Unknown Source)
+	at java.util.TimerThread.run(Unknown Source)
+2015-07-17 09:37:31,692 ERROR [core.OperacoesWFM] 
+java.lang.ArrayIndexOutOfBoundsException: 2
+	at conexoes.Core.realizarEscalonamentoTarefaNaoAceitaWFM(Core.java:3872)
+	at core.OperacoesWFM.escalonamentoTarefasNaoAceitas(OperacoesWFM.java:122)
+	at core.OperacoesWFM.escalonamentoWFM(OperacoesWFM.java:53)
+	at core.OperacoesWFM.run(OperacoesWFM.java:33)
+	at java.util.TimerThread.mainLoop(Unknown Source)
+	at java.util.TimerThread.run(Unknown Source)
+2015-07-17 09:45:22,726 ERROR [core.OperacoesWFM] 
+java.lang.ArrayIndexOutOfBoundsException: 2
+	at conexoes.Core.realizarEscalonamentoTarefaNaoAceitaWFM(Core.java:3873)
+	at core.OperacoesWFM.escalonamentoTarefasNaoAceitas(OperacoesWFM.java:122)
+	at core.OperacoesWFM.escalonamentoWFM(OperacoesWFM.java:53)
+	at core.OperacoesWFM.run(OperacoesWFM.java:33)
+	at java.util.TimerThread.mainLoop(Unknown Source)
+	at java.util.TimerThread.run(Unknown Source)
+2015-07-20 22:45:44,351 ERROR [core.OperacoesWFM] 
+java.lang.NullPointerException
+	at conexoes.Core.getEntradaSitesAbertos(Core.java:3734)
+	at core.OperacoesWFM.entradaSites(OperacoesWFM.java:187)
+	at core.OperacoesWFM.run(OperacoesWFM.java:32)
+	at java.util.TimerThread.mainLoop(Unknown Source)
+	at java.util.TimerThread.run(Unknown Source)
+2015-07-29 07:47:19,630 ERROR [core.OperacoesWFM] 
+java.lang.IndexOutOfBoundsException: Index: 0, Size: 0
+	at java.util.ArrayList.rangeCheck(Unknown Source)
+	at java.util.ArrayList.get(Unknown Source)
+	at core.OperacoesWFM.entradaSites(OperacoesWFM.java:168)
+	at core.OperacoesWFM.run(OperacoesWFM.java:32)
+	at java.util.TimerThread.mainLoop(Unknown Source)
+	at java.util.TimerThread.run(Unknown Source)
+2015-08-06 15:32:19,384 ERROR [core.OperacoesWFM] 
+java.lang.IndexOutOfBoundsException: Index: 0, Size: 0
+	at java.util.ArrayList.rangeCheck(Unknown Source)
+	at java.util.ArrayList.get(Unknown Source)
+	at core.OperacoesWFM.entradaSites(OperacoesWFM.java:168)
+	at core.OperacoesWFM.run(OperacoesWFM.java:32)
+	at java.util.TimerThread.mainLoop(Unknown Source)
+	at java.util.TimerThread.run(Unknown Source)
+2015-08-06 15:32:48,321 ERROR [core.OperacoesWFM] 
+java.lang.IndexOutOfBoundsException: Index: 0, Size: 0
+	at java.util.ArrayList.rangeCheck(Unknown Source)
+	at java.util.ArrayList.get(Unknown Source)
+	at core.OperacoesWFM.entradaSites(OperacoesWFM.java:168)
+	at core.OperacoesWFM.run(OperacoesWFM.java:32)
+	at java.util.TimerThread.mainLoop(Unknown Source)
+	at java.util.TimerThread.run(Unknown Source)
+2015-08-06 15:33:17,413 ERROR [core.OperacoesWFM] 
+java.lang.IndexOutOfBoundsException: Index: 0, Size: 0
+	at java.util.ArrayList.rangeCheck(Unknown Source)
+	at java.util.ArrayList.get(Unknown Source)
+	at core.OperacoesWFM.entradaSites(OperacoesWFM.java:168)
+	at core.OperacoesWFM.run(OperacoesWFM.java:32)
+	at java.util.TimerThread.mainLoop(Unknown Source)
+	at java.util.TimerThread.run(Unknown Source)
+2015-08-06 15:33:46,613 ERROR [core.OperacoesWFM] 
+java.lang.IndexOutOfBoundsException: Index: 0, Size: 0
+	at java.util.ArrayList.rangeCheck(Unknown Source)
+	at java.util.ArrayList.get(Unknown Source)
+	at core.OperacoesWFM.entradaSites(OperacoesWFM.java:168)
+	at core.OperacoesWFM.run(OperacoesWFM.java:32)
+	at java.util.TimerThread.mainLoop(Unknown Source)
+	at java.util.TimerThread.run(Unknown Source)
+2015-08-06 15:34:15,819 ERROR [core.OperacoesWFM] 
+java.lang.IndexOutOfBoundsException: Index: 0, Size: 0
+	at java.util.ArrayList.rangeCheck(Unknown Source)
+	at java.util.ArrayList.get(Unknown Source)
+	at core.OperacoesWFM.entradaSites(OperacoesWFM.java:168)
+	at core.OperacoesWFM.run(OperacoesWFM.java:32)
+	at java.util.TimerThread.mainLoop(Unknown Source)
+	at java.util.TimerThread.run(Unknown Source)
+2015-08-06 15:34:45,174 ERROR [core.OperacoesWFM] 
+java.lang.IndexOutOfBoundsException: Index: 0, Size: 0
+	at java.util.ArrayList.rangeCheck(Unknown Source)
+	at java.util.ArrayList.get(Unknown Source)
+	at core.OperacoesWFM.entradaSites(OperacoesWFM.java:168)
+	at core.OperacoesWFM.run(OperacoesWFM.java:32)
+	at java.util.TimerThread.mainLoop(Unknown Source)
+	at java.util.TimerThread.run(Unknown Source)
+2015-08-06 15:45:23,734 ERROR [core.OperacoesWFM] 
+java.lang.IndexOutOfBoundsException: Index: 0, Size: 0
+	at java.util.ArrayList.rangeCheck(Unknown Source)
+	at java.util.ArrayList.get(Unknown Source)
+	at core.OperacoesWFM.entradaSites(OperacoesWFM.java:168)
+	at core.OperacoesWFM.run(OperacoesWFM.java:32)
+	at java.util.TimerThread.mainLoop(Unknown Source)
+	at java.util.TimerThread.run(Unknown Source)
+2015-09-22 10:33:48,367 ERROR [core.ColetaAlarmesNetcool] 
+java.sql.SQLException: [Microsoft][SQLServer 2000 Driver for JDBC][SQLServer]Invalid column name 'DATA'.
+	at com.microsoft.jdbc.base.BaseExceptions.createException(Unknown Source)
+	at com.microsoft.jdbc.base.BaseExceptions.getException(Unknown Source)
+	at com.microsoft.jdbc.sqlserver.tds.TDSRequest.processErrorToken(Unknown Source)
+	at com.microsoft.jdbc.sqlserver.tds.TDSRequest.processReplyToken(Unknown Source)
+	at com.microsoft.jdbc.sqlserver.tds.TDSExecuteRequest.processReplyToken(Unknown Source)
+	at com.microsoft.jdbc.sqlserver.tds.TDSRequest.processReply(Unknown Source)
+	at com.microsoft.jdbc.sqlserver.SQLServerImplStatement.getNextResultType(Unknown Source)
+	at com.microsoft.jdbc.base.BaseStatement.commonTransitionToState(Unknown Source)
+	at com.microsoft.jdbc.base.BaseStatement.postImplExecute(Unknown Source)
+	at com.microsoft.jdbc.base.BaseStatement.commonExecute(Unknown Source)
+	at com.microsoft.jdbc.base.BaseStatement.executeQueryInternal(Unknown Source)
+	at com.microsoft.jdbc.base.BaseStatement.executeQuery(Unknown Source)
+	at conexoes.Core.getAlarmeAtivosDataMax(Core.java:2209)
+	at core.ColetaAlarmesNetcool.coletaAlarmesAtivos(ColetaAlarmesNetcool.java:27)
+	at core.ColetaAlarmesNetcool.run(ColetaAlarmesNetcool.java:45)
+	at core.Main.main(Main.java:42)
+2015-09-22 10:34:50,285 ERROR [core.ColetaAlarmesNetcool] 
+java.sql.SQLException: The executeQuery method must return a result set.
+	at net.sourceforge.jtds.jdbc.JtdsStatement.executeSQLQuery(JtdsStatement.java:517)
+	at net.sourceforge.jtds.jdbc.JtdsStatement.executeQuery(JtdsStatement.java:1433)
+	at conexoes.NetcoolSybase.getAlarmesInterrupcao(NetcoolSybase.java:236)
+	at core.ColetaAlarmesNetcool.coletaAlarmesAtivos(ColetaAlarmesNetcool.java:30)
+	at core.ColetaAlarmesNetcool.run(ColetaAlarmesNetcool.java:45)
+	at core.Main.main(Main.java:42)
+2015-09-22 10:37:43,768 ERROR [core.ColetaAlarmesNetcool] 
+java.sql.SQLException: The executeQuery method must return a result set.
+	at net.sourceforge.jtds.jdbc.JtdsStatement.executeSQLQuery(JtdsStatement.java:517)
+	at net.sourceforge.jtds.jdbc.JtdsStatement.executeQuery(JtdsStatement.java:1433)
+	at conexoes.NetcoolSybase.getAlarmesInterrupcao(NetcoolSybase.java:236)
+	at core.ColetaAlarmesNetcool.coletaAlarmesAtivos(ColetaAlarmesNetcool.java:30)
+	at core.ColetaAlarmesNetcool.run(ColetaAlarmesNetcool.java:45)
+	at core.Main.main(Main.java:42)
+2015-09-22 10:44:16,441 ERROR [core.ColetaAlarmesNetcool] 
+java.sql.SQLException: The executeQuery method must return a result set.
+	at net.sourceforge.jtds.jdbc.JtdsStatement.executeSQLQuery(JtdsStatement.java:517)
+	at net.sourceforge.jtds.jdbc.JtdsStatement.executeQuery(JtdsStatement.java:1433)
+	at conexoes.NetcoolSybase.getAlarmesInterrupcao(NetcoolSybase.java:233)
+	at core.ColetaAlarmesNetcool.coletaAlarmesAtivos(ColetaAlarmesNetcool.java:30)
+	at core.ColetaAlarmesNetcool.run(ColetaAlarmesNetcool.java:45)
+	at core.Main.main(Main.java:42)
+2015-09-22 12:34:57,860 ERROR [core.ColetaAlarmesNetcool] 
+java.sql.SQLException: [Microsoft][SQLServer 2000 Driver for JDBC][SQLServer]String or binary data would be truncated.
+	at com.microsoft.jdbc.base.BaseExceptions.createException(Unknown Source)
+	at com.microsoft.jdbc.base.BaseExceptions.getException(Unknown Source)
+	at com.microsoft.jdbc.sqlserver.tds.TDSRequest.processErrorToken(Unknown Source)
+	at com.microsoft.jdbc.sqlserver.tds.TDSRequest.processReplyToken(Unknown Source)
+	at com.microsoft.jdbc.sqlserver.tds.TDSExecuteRequest.processReplyToken(Unknown Source)
+	at com.microsoft.jdbc.sqlserver.tds.TDSRequest.processReply(Unknown Source)
+	at com.microsoft.jdbc.sqlserver.SQLServerImplStatement.getNextResultType(Unknown Source)
+	at com.microsoft.jdbc.base.BaseStatement.commonTransitionToState(Unknown Source)
+	at com.microsoft.jdbc.base.BaseStatement.postImplExecute(Unknown Source)
+	at com.microsoft.jdbc.base.BaseStatement.commonExecute(Unknown Source)
+	at com.microsoft.jdbc.base.BaseStatement.executeUpdateInternal(Unknown Source)
+	at com.microsoft.jdbc.base.BaseStatement.executeUpdate(Unknown Source)
+	at conexoes.Core.inserirAlarmeAtivo(Core.java:2381)
+	at core.ColetaAlarmesNetcool.coletaAlarmesAtivos(ColetaAlarmesNetcool.java:34)
+	at core.ColetaAlarmesNetcool.run(ColetaAlarmesNetcool.java:49)
+	at core.Main.main(Main.java:41)
+2015-09-22 12:36:45,626 ERROR [core.ColetaAlarmesNetcool] 
+java.sql.SQLException: [Microsoft][SQLServer 2000 Driver for JDBC][SQLServer]String or binary data would be truncated.
+	at com.microsoft.jdbc.base.BaseExceptions.createException(Unknown Source)
+	at com.microsoft.jdbc.base.BaseExceptions.getException(Unknown Source)
+	at com.microsoft.jdbc.sqlserver.tds.TDSRequest.processErrorToken(Unknown Source)
+	at com.microsoft.jdbc.sqlserver.tds.TDSRequest.processReplyToken(Unknown Source)
+	at com.microsoft.jdbc.sqlserver.tds.TDSExecuteRequest.processReplyToken(Unknown Source)
+	at com.microsoft.jdbc.sqlserver.tds.TDSRequest.processReply(Unknown Source)
+	at com.microsoft.jdbc.sqlserver.SQLServerImplStatement.getNextResultType(Unknown Source)
+	at com.microsoft.jdbc.base.BaseStatement.commonTransitionToState(Unknown Source)
+	at com.microsoft.jdbc.base.BaseStatement.postImplExecute(Unknown Source)
+	at com.microsoft.jdbc.base.BaseStatement.commonExecute(Unknown Source)
+	at com.microsoft.jdbc.base.BaseStatement.executeUpdateInternal(Unknown Source)
+	at com.microsoft.jdbc.base.BaseStatement.executeUpdate(Unknown Source)
+	at conexoes.Core.inserirAlarmeAtivo(Core.java:2381)
+	at core.ColetaAlarmesNetcool.coletaAlarmesAtivos(ColetaAlarmesNetcool.java:34)
+	at core.ColetaAlarmesNetcool.run(ColetaAlarmesNetcool.java:49)
+	at core.Main.main(Main.java:41)
+2015-09-22 12:37:53,188 ERROR [core.ColetaAlarmesNetcool] 
+java.sql.SQLException: [Microsoft][SQLServer 2000 Driver for JDBC][SQLServer]Violation of PRIMARY KEY constraint 'PK_ALARMES_ATIVOS_NETCOOL'. Cannot insert duplicate key in object 'dbo.ALARMES_ATIVOS_NETCOOL'. The duplicate key value is (421076162).
+	at com.microsoft.jdbc.base.BaseExceptions.createException(Unknown Source)
+	at com.microsoft.jdbc.base.BaseExceptions.getException(Unknown Source)
+	at com.microsoft.jdbc.sqlserver.tds.TDSRequest.processErrorToken(Unknown Source)
+	at com.microsoft.jdbc.sqlserver.tds.TDSRequest.processReplyToken(Unknown Source)
+	at com.microsoft.jdbc.sqlserver.tds.TDSExecuteRequest.processReplyToken(Unknown Source)
+	at com.microsoft.jdbc.sqlserver.tds.TDSRequest.processReply(Unknown Source)
+	at com.microsoft.jdbc.sqlserver.SQLServerImplStatement.getNextResultType(Unknown Source)
+	at com.microsoft.jdbc.base.BaseStatement.commonTransitionToState(Unknown Source)
+	at com.microsoft.jdbc.base.BaseStatement.postImplExecute(Unknown Source)
+	at com.microsoft.jdbc.base.BaseStatement.commonExecute(Unknown Source)
+	at com.microsoft.jdbc.base.BaseStatement.executeUpdateInternal(Unknown Source)
+	at com.microsoft.jdbc.base.BaseStatement.executeUpdate(Unknown Source)
+	at conexoes.Core.importacaoAlarmesAtivos(Core.java:2419)
+	at core.ColetaAlarmesNetcool.coletaAlarmesAtivos(ColetaAlarmesNetcool.java:38)
+	at core.ColetaAlarmesNetcool.run(ColetaAlarmesNetcool.java:49)
+	at core.Main.main(Main.java:41)
